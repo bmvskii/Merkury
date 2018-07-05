@@ -1,8 +1,31 @@
+.features_wrapper {
+	position: relative;
+
+	margin-top: -125px;
+	padding-top: 260px;
+
+	background-color: #ffffff;
+}
+
+.features_wrapper::before {
+	display: block;
+	content: "";
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -900;
+
+	height: 140px;
+
+	background-color: #ffffff;
+}
+
 .features {
 	display: flex;
 	align-items: center;
-
-	margin-top: 130px;
 }
 
 .feature {
@@ -11,7 +34,7 @@
 	align-items: center;
 
 	margin: 0 15px;
-	padding: 0 25px;
+	padding: 0 40px;
 
 	width: 33%;
 
@@ -24,6 +47,17 @@
 
 .feature:last-child {
 	margin-right: 0;
+}
+
+.feature .icon::after {
+	display: block;
+	content: url("../img/line.png");
+
+	transform: translate(93%, -335%);
+}
+
+.feature:last-child .icon::after {
+	display: none;
 }
 
 .icon {

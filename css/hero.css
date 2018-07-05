@@ -2,7 +2,7 @@
 	display: block;
 	content: "";
 
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -26,6 +26,25 @@
 	margin-top: 60px;
 
 	width: 65%;
+}
+
+.db-img {
+	position: relative;
+	left: 0;
+
+	z-index: 1;
+}
+
+.dashboard::before {
+	display: block;
+	content: "";
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -950;
 
 	box-shadow: 0 0 80px #274790;
 }
