@@ -7,13 +7,14 @@
 	<meta name="authot" content="">
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-	<!-- <link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<link rel="stylesheet" type="text/css" href="css/icon_features.css">
-	<link rel="stylesheet" type="text/css" href="css/proposals.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/hero.css">
+	<link rel="stylesheet" type="text/css" href="css/features.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 
 	<title>Merkury</title>
 
@@ -27,60 +28,75 @@
 <body>
 
 	<div class="header">
-		<div class="logo"><img src="./img/logo.png" alt="logo"></div>
+		<a href="#"><img src="img/logo.png" alt="logo"></a>
 		<ul class="nav">
-			<a href="#"><li>Features</li></a>
-			<a href="#"><li>Pricing</li></a>
-			<a href="#"><li>Blog</li></a>
-			<a href="#"><li>Contact</li></a>
-			<button class="login">Login</button>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+			<button class="button login">Login</button>
 		</ul>
 	</div>
 
 	<div class="hero container">
 		<h2>Grow Your business with Merkury</h2>
 		<h3>Your partner in crime!</h3>
-		<button class="start">Get started</button>
-		<div class="dashboard_wrapper"><img class="dashboard" src="./img/dashboard.jpg"></div>
+		<button class="button start">Get started</button>
+
+		<!-- TODO: SHADOW -->
+		<div class="dashboard">
+			<img class="responsive-image" src="img/dashboard.jpg" alt="dashboard">
+		</div>
 	</div>
 
 	<div class="features container">
 		<div class="feature">
-			<div class="icon"><img src="./img/icon1.png" alt="icon1"></div>
-			<h4>Manage Your Workflow</h4>
+			<div class="icon"><img src="img/icon1.png" alt="icon1"></div>
+			<span class="title">Manage Your Workflow</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
-			<button class="more">See more</button>
+			<button class="button more">See more</button>
 		</div>
 		<div class="feature">
-			<div class="icon"><img src="./img/icon2.png" alt="icon2"></div>
-			<h4>Analytics & Insights</h4>
+			<div class="icon"><img src="img/icon2.png" alt="icon2"></div>
+			<span class="title">Analytics & Insights</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
-			<button class="more">See more</button>
+			<button class="button more">See more</button>
 		</div>
 		<div class="feature">
-			<div class="icon"><img src="./img/icon3.png" alt="icon3"></div>
-			<h4>Organize Your Deadlines</h4>
+			<div class="icon"><img src="img/icon3.png" alt="icon3"></div>
+			<span class="title">Organize Your Deadlines</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
-			<button class="more">See more</button>
+			<button class="button more">See more</button>
 		</div>
 	</div>
 
-	<div class="requirements_wrapper">
-		<div class="requirements container">
+	<div class="gradient-layout"></div>
+
+	<div class="demo_wrapper">
+		<div class="demo container">
 			<div class="info">
 				<h2>All You need is a browser!</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo mollitia ducimus necessitatibus doloremque. Officia ipsam non asperiores nisi, voluptatum laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ex, fuga distinctio architecto amet assumenda cupiditate, dolorem dolorum libero repellendus.</p>
-				<div class="support_features">
-					<div class="text">Lorem ipsum dolor sit amet consectetur</div>
-					<div class="text">Ut enim ad minim veniam quis nostrud</div>
+				<div class="supported-feature">
+					<div class="checked-icon">
+						<img src="img/checked.png" alt="checked icon" scr="img/checked.png">
+					</div>
+					<span class="feature-info">Lorem ipsum dolor sit amet consectetur</span>
+				</div>
+				<div class="supported-feature">
+					<div class="checked-icon">
+						<img src="img/checked.png" alt="checked icon" scr="img/checked.png">
+					</div>
+					<span class="feature-info">Ut enim ad minim veniam quis nostrud</span>
+				</div>
 		  	</div>
 			</div>
-			<div class="presentation_wrapper"><img src="./img/presentation.png" alt="presentation" class="browser"></div>
+			<div class="demo-img"></div>
 		</div>
 	</div>
 
-	<div class="drag_and_drop_wrapper">
+	<!-- <div class="drag_and_drop_wrapper">
 		<div class="drag_and_drop">
 			<div class="in_progress">
 				<span class="status">In Progress</span>
@@ -104,7 +120,6 @@
 					</div>
 				</div>
 		</div>
-
 		<div class="info">
 			<h2>Drag & Drop</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo mollitia ducimus necessitatibus doloremque. Officia ipsam non asperiores nisi, voluptatum laborum.</p>
@@ -182,8 +197,9 @@
 				<a href="#"><img src="img/google_icon.png" alt="google_icon"></a>
 			</div>
 		</div>
-	</div>
+	</div> --> -->
 
-	<script src=" "></script>
+	<script src=""></script>
+
 </body>
 </html>

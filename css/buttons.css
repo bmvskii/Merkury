@@ -1,0 +1,41 @@
+.login {
+	border: 1px solid transparent;
+
+	color: #5584ff;
+}
+
+.login:hover {
+	cursor: pointer;
+
+	border: 1px solid #5584ff;
+	transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.start {
+	margin-top: 40px;
+
+	font-family: "Roboto Bold";
+
+	color: #ffffff;
+	background-color: #5584ff;
+}
+
+.start:hover {
+	cursor: pointer;
+}
+
+.more {
+  padding: 10px 80px;
+
+  border: 1px solid transparent;
+
+  font-family: "Roboto Bold";
+	color: #0e1a35;
+}
+
+.more:hover {
+  cursor: pointer;
+
+  border: 1px solid #dadee7;
+  transition: border-color 0.5s ease-in-out;
+}

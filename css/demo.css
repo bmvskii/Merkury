@@ -1,0 +1,48 @@
+.demo_wrapper {
+	background: #f6f7fa;
+	padding-bottom: 275px;
+	position: relative;
+}
+
+.demo {
+	display: flex;
+}
+
+.info {
+	width: 50%;
+}
+
+.info h2 {
+	color: #0e1a35;
+}
+
+.info p {
+	padding-right: 100px;
+}
+
+.supported-feature {
+	display: flex;
+
+	margin-top: 30px;
+}
+
+.feature-info {
+	line-height: 1.5;
+	font-size: 1.3em;
+	color: #5886ff;
+}
+
+.checked-icon {
+	margin-right: 30px;
+}
+
+.demo-img {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	background: url("../img/demo.png") no-repeat center left;
+	background-size: cover;
+}
