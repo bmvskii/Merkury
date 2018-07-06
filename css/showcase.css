@@ -1,0 +1,113 @@
+.showcase_wrapper {
+  background-color: #f6f7fa;
+
+  padding-top: 100px;
+}
+
+.showcase {
+  text-align: center;
+}
+
+.template {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 80px;
+}
+
+.template .info {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  width: 50%;
+}
+
+.top-left p {
+  width: 40%;
+}
+
+.right-bottom p {
+  width: 40%;
+}
+
+.mockup {
+  width: 90%;
+}
+
+.pointer {
+  width: 95%;
+  height: 20px;
+
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+
+  height: 2px;
+  width: calc(100% - 30px);
+
+  background-color: #5584ff;
+}
+
+.top-left .line{
+  left: 0;
+}
+
+.right-bottom .line{
+  right: 0;
+}
+
+.pointer::after {
+  display: block;
+  content: "";
+
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: #5584ff;
+}
+
+.pointer::before {
+  display: block;
+  content: "";
+
+  height: 38px;
+  width: 38px;
+
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: rgba(85,132,255, .5);
+}
+
+.top-left .pointer::after {
+  right: 0;
+  bottom: -18%;
+}
+
+.right-bottom .pointer::after {
+  left: 0;
+  bottom: -18%;
+}
+
+.top-left .pointer::before {
+  right: -0.7%;
+  bottom: -37%;
+}
+
+.right-bottom .pointer::before {
+  left: -0.7%;
+  bottom: -37%;
+}

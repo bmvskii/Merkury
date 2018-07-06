@@ -8,15 +8,11 @@
 	display: flex;
 }
 
-.info {
+.demo .info {
 	width: 50%;
 }
 
-.info h2 {
-	color: #0e1a35;
-}
-
-.info p {
+.demo .info p {
 	padding-right: 100px;
 }
 

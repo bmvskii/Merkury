@@ -1,0 +1,119 @@
+.drag-and-drop_wrapper {
+  padding: 150px 0;
+}
+
+.drag-and-drop {
+  display: flex;
+}
+
+.workflow {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  right: 120px;
+}
+
+.tasks_wrapper {
+  width: 95%;
+}
+
+.static-task {
+  width: 100%;
+
+  box-shadow: 0 0 80px rgba(39,71,144, .5);
+}
+
+.state-info {
+  font: 1.9em/40% "Roboto Medium", Helvetica, Arial, sans-serif;
+  padding: 30px 0;
+}
+
+.in-progress {
+  position: relative;
+}
+
+.in-progress .state-info::after {
+  display: block;
+  content: url("../img/arrow.png");
+
+  position: absolute;
+  right: 5%;
+  top: 7%;
+}
+
+.draggable-task {
+  width: 100%;
+
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.hand {
+  position: absolute;
+  right: -4px;
+  bottom: -27px;
+}
+
+.drop-zone {
+  width: 100%;
+
+  margin-top: 15px;
+
+  text-align: center;
+  line-height: 85px;
+
+  border: 1px dashed #8492af;
+  color: #8492af;
+}
+
+.drag-and-drop .info {
+  width: 45%;
+}
+
+.arrows {
+  display: flex;
+
+  margin: 0 -10px;
+  margin-top: 40px;
+}
+
+.left,
+.right {
+  margin: 0 10px;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid #8492af;
+  border-radius: 50%;
+
+  opacity: 1;
+
+  transition: opacity .5s ease-in-out;
+}
+
+.left::before {
+  display: block;
+  content: "◄";
+
+  transform: translate(17%, 43%);
+
+  color: #8492af;
+}
+
+.right::before {
+  display: block;
+  content: "►";
+
+  transform: translate(28%, 43%);
+  color: #8492af;
+}
+
+.left:hover,
+.right:hover {
+  cursor: pointer;
+
+  opacity: .5;
+}

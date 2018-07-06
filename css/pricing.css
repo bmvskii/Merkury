@@ -1,0 +1,125 @@
+.pricing_wrapper {
+  background-color: #ffffff;
+
+  padding-bottom: 100px;
+}
+  .pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .plans {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 0 -45px;
+    padding: 80px 0;
+  }
+    .plan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0 40px;
+      padding: 30px;
+
+      width: 33%;
+
+      box-shadow: 1px 1px 60px rgba(14,26,53,.2);
+    }
+      .plan .title {
+        text-transform: uppercase;
+
+        font-size: 1.5em;
+        color: #0e1a35;
+      }
+
+      .cost {
+        margin: 40px 0;
+      }
+        /* A cost customization */
+        .period {
+          font-size: 1.5em;
+          line-height: 1.5;
+          color: #8492af;
+        }
+        .dollar {
+          font-size: 2em;
+          line-height: 1.3;
+        }
+        .digit {
+          font-size: 4em;
+        }
+        /* Plan features */
+
+      .plan .plan-features {
+            display: flex;
+            margin: 0;
+      }
+        /* Features icons */
+        .plan .plan-features::before {
+          display: block;
+          content: url("../img/supported.png");
+
+          margin-right: 10px;
+        }
+          /* Unsupported features */
+          .plan:first-child .plan-features:nth-last-child(2)::before {
+            display: block;
+            content: url("../img/unsupported.png");
+
+            margin-right: 10px;
+          }
+          .plan:first-child .plan-features:last-child::before {
+            display: block;
+            content: url("../img/unsupported.png");
+
+            margin-right: 10px;
+          }
+          .plan:nth-child(2) .plan-features:last-child::before {
+            display: block;
+            content: url("../img/unsupported.png");
+
+            margin-right: 10px;
+          }
+
+    .pricing > p {
+      width: 60%;
+
+      text-align: center;
+    }
+
+    .join {
+    	position: relative;
+
+    	padding: 10px 60px;
+      margin: 60px;
+
+    	font-family: "Roboto Bold";
+
+    	color: #fff;
+    	background-color: #5584ff;
+    }
+
+    .join:hover {
+    	cursor: pointer;
+    }
+
+    .join::after,
+    .join::before {
+      display: block;
+    	content: url("../img/line.png");
+
+      position: absolute;
+      bottom: 39%;
+    }
+
+    .join::after {
+      right: -130%;
+    }
+
+    .join::before {
+      left: -130%;
+    }

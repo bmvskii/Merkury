@@ -53,7 +53,9 @@
 	display: block;
 	content: url("../img/line.png");
 
-	transform: translate(93%, -335%);
+	position: absolute;
+	bottom: 48%;
+	left: 170%;
 }
 
 .feature:last-child .icon::after {
@@ -61,5 +63,10 @@
 }
 
 .icon {
+	position: relative;
+
+	height: 80px;
+	width: 80px;
+
 	margin-bottom: 30px;
 }

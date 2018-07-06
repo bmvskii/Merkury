@@ -46,5 +46,5 @@
 	bottom: 0;
 	z-index: -950;
 
-	box-shadow: 0 0 80px #274790;
+	box-shadow: 0 0 80px rgba(39,71,144, .5);
 }
