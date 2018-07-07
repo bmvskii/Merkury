@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/animations.css">
 
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/hero.css">
@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/showcase.css">
 	<link rel="stylesheet" href="css/drag_and_drop.css">
 	<link rel="stylesheet" href="css/pricing.css">
+	<link rel="stylesheet" href="css/footer.css">
 
 	<title>Merkury</title>
 
@@ -29,33 +30,25 @@
 
 </head>
 
-<!-- TODO: 1) Change the project structure.
-			2) Organize files with styles.
-			3) Recalculate margins, paddings.
-			4) Add Effects on some elements.
-			5) Animate sevelar elements.
-			6) Find bad html and rewrite it to accomplish the clarity of code.  -->
 <body>
 
-	<!-- TODO: Hover effect on hyperlink -->
 	<div class="header">
-		<a href="#"><img src="img/logo.png" alt="logo"></a>
-		<ul class="nav">
-			<li><a href="#">Features</a></li>
-			<li><a href="#">Pricing</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contact</a></li>
+		<a class="logo" href="#"><img class="responsive-image" src="img/logo.png" alt="logo"></a>
+		<div class="nav">
+			<a class="link" href="#">Features</a>
+			<a class="link" href="#">Pricing</a>
+			<a class="link" href="#">Blog</a>
+			<a class="link" href="#">Contact</a>
 			<button class="button login">Login</button>
-		</ul>
+		</div>
 	</div>
 
 	<div class="hero container">
 		<h2>Grow Your business with Merkury</h2>
 		<h3>Your partner in crime!</h3>
 		<button class="button start">Get started</button>
-
-		<div class="dashboard">
-			<div class="db-img">
+		<div class="dashboard_wrapper">
+			<div class="dashboard">
 				<img class="responsive-image" src="img/dashboard.jpg" alt="dashboard">
 			</div>
 		</div>
@@ -64,13 +57,19 @@
 	<div class="features_wrapper">
 		<div class="features container">
 			<div class="feature">
-				<div class="icon"><img src="img/icon1.png" alt="icon1"></div>
+				<div class="icon">
+					<img src="img/icon1.png" alt="icon1">
+				</div>
 				<span class="title">Manage Your Workflow</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
 				<button class="button more">See more</button>
 			</div>
 			<div class="feature">
-				<div class="icon"><img src="img/icon2.png" alt="icon2"></div>
+				<div class="icon_wrapper">
+					<div class="icon">
+						<img src="img/icon2.png" alt="icon2">
+					</div>
+				</div>
 				<span class="title">Analytics & Insights</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
 				<button class="button more">See more</button>
@@ -84,29 +83,21 @@
 		</div>
 	</div>
 
-	<div class="gradient-layout-top"></div>
-
 	<div class="demo_wrapper">
+		<div class="gradient-layer"></div>
 		<div class="demo container">
 			<div class="info">
 				<h2 class="dark">All You need is a browser!</h2>
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo mollitia ducimus necessitatibus doloremque. Officia ipsam non asperiores nisi, voluptatum laborum.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ex, fuga distinctio architecto amet assumenda cupiditate, dolorem dolorum libero repellendus.</p>
-				<div class="supported-feature">
-					<div class="checked-icon">
-						<img src="img/supported.png" alt="checked icon" scr="img/checked.png">
-					</div>
-					<span class="feature-info">Lorem ipsum dolor sit amet consectetur</span>
-				</div>
-				<div class="supported-feature">
-					<div class="checked-icon">
-						<img src="img/supported.png" alt="checked icon" scr="img/checked.png">
-					</div>
-					<span class="feature-info">Ut enim ad minim veniam quis nostrud</span>
-				</div>
-		  	</div>
+
+				<p class="supported-feature">Lorem ipsum dolor sit amet, consectetur.</p>
+				<p class="supported-feature">Lorem ipsum dolor sit amet, consectetur.</p>
+		 	</div>
+			<div class="demo-img">
+				<img class="responsive-image" src="img/demo.png" alt="demo on devices">
 			</div>
-			<div class="demo-img"></div>
 		</div>
 	</div>
 
@@ -120,9 +111,7 @@
 						<span class="number">(3)</span>
 					</div>
 					<div class="tasks_wrapper">
-						<div class="static-task">
-							<img class="responsive-image" src="img/in_progress_tasks.png" alt="tasks-in-progress">
-						</div>
+						<img class="responsive-image" src="img/in_progress_tasks.png" alt="tasks-in-progress">
 						<div class="draggable-task">
 							<img class="responsive-image" src="img/task.png" alt="task" class="task">
 							<div class="hand">
@@ -137,9 +126,7 @@
 							<span class="number">(2)</span>
 						</div>
 						<div class="tasks_wrapper">
-							<div class="static-task">
-								<img class="responsive-image" src="img/done_tasks.png" alt="in-progress">
-							</div>
+							<img class="responsive-image" src="img/done_tasks.png" alt="in-progress">
 							<div class="drop-zone">Drop here</div>
 						</div>
 					</div>
@@ -182,8 +169,6 @@
 		</div>
 	</div>
 
-	<div class="gradient-layout-bottom"></div>
-
 	<div class="pricing_wrapper">
 		<div class="pricing container">
 			<h2 class="dark">Check our pricing!</h2>
@@ -216,7 +201,7 @@
 					<span class="title">Gold plan</span>
 					<div class="cost">
 						<span class="dollar">$</span>
-						<span class="digit">19</span>
+						<span class="digit">79</span>
 						<span class="period">/mon</span>
 					</div>
 					<p class="plan-features">Lorem ipsum dolor sit amet.</p>
@@ -230,16 +215,18 @@
 		</div>
 	</div>
 
-	<div class="footer container">
-		<p>© 2016 Merkury All Right Reserved </p>
-		<div class="additional_info">
-			<a href="#">Pricing</a>
-			<a href="#">Blog</a>
-			<a href="#">Contact</a>
-			<div class="social">
-				<a href="#"><img src="img/twitter_icon.png" alt="twitter_icon"></a>
-				<a href="#"><img src="img/facebook_icon.png" alt="facebook_icon"></a>
-				<a href="#"><img src="img/google_icon.png" alt="google_icon"></a>
+	<div class="footer_wrapper">
+		<div class="footer container">
+			<p>© 2016 Merkury All Right Reserved </p>
+			<div class="info">
+				<a href="#">Pricing</a>
+				<a href="#">Blog</a>
+				<a href="#">Contact</a>
+				<div class="social-links">
+					<a href="#"><img src="img/facebook_icon.png" alt="facebook_icon"></a>
+					<a href="#"><img src="img/twitter_icon.png" alt="twitter_icon"></a>
+					<a href="#"><img src="img/google_icon.png" alt="google_icon"></a>
+				</div>
 			</div>
 		</div>
 	</div>

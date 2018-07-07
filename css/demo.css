@@ -1,44 +1,54 @@
 .demo_wrapper {
 	background: #f6f7fa;
 	padding-bottom: 275px;
-	position: relative;
+}
+
+.gradient-layer {
+	height: 175px;
+	background: linear-gradient(#ffffff, #f6f7fa);
 }
 
 .demo {
 	display: flex;
+
+	position: relative;
 }
 
 .demo .info {
 	width: 50%;
+	align-self: center;
 }
 
 .demo .info p {
-	padding-right: 100px;
+	padding-right: 6em;
 }
 
 .supported-feature {
 	display: flex;
+	align-items: center;
 
-	margin-top: 30px;
+	width: 100%;
+
+	color: #5584ff;
+
+	font-size: 1.4em;
+	line-height: 1.2em;
 }
 
-.feature-info {
-	line-height: 1.5;
-	font-size: 1.3em;
-	color: #5886ff;
-}
+.supported-feature::before {
+	display: block;
+	content: url("../img/supported.png");
 
-.checked-icon {
-	margin-right: 30px;
+	height: 28px;
+
+	margin-right: 10px;
 }
 
 .demo-img {
 	position: absolute;
-	width: 50%;
 	top: 0;
-	right: 0;
 	bottom: 0;
+	right: -45%;
 
-	background: url("../img/demo.png") no-repeat center left;
-	background-size: cover;
+	width: 100%;
 }

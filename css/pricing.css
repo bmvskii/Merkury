@@ -3,123 +3,146 @@
 
   padding-bottom: 100px;
 }
-  .pricing {
+
+.pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-  .plans {
-    display: flex;
-    justify-content: space-between;
 
-    width: 100%;
+.plans {
+  display: flex;
+  justify-content: space-between;
 
-    margin: 0 -45px;
-    padding: 80px 0;
-  }
-    .plan {
+  width: 100%;
+
+  margin: 0 -45px;
+  padding: 80px 0;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 40px;
+  padding: 30px;
+
+  width: 33%;
+
+  box-shadow: 1px 1px 60px rgba(14,26,53,.2);
+  transition: transform .3s .1s ease-in-out;
+}
+
+.plan:hover {
+  cursor: pointer;
+
+  transform: translateY(20px);
+}
+
+.plan .title {
+  text-transform: uppercase;
+
+  font-size: 1.5em;
+  color: #0e1a35;
+}
+
+.cost {
+  margin: 40px 0;
+}
+
+/* A cost customization */
+.period {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #8492af;
+}
+
+.dollar {
+  font-size: 2em;
+  line-height: 1.3;
+}
+
+.digit {
+  font-size: 4em;
+}
+  /* Plan features */
+.plan-features {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0;
+}
+/* Features icons */
+.plan-features::before {
+  display: block;
+  content: url("../img/supported.png");
 
-      margin: 0 40px;
-      padding: 30px;
+  margin-right: 10px;
+}
+/* Unsupported features */
+.plan:first-child .plan-features:nth-last-child(2)::before {
+  display: block;
+  content: url("../img/unsupported.png");
 
-      width: 33%;
+  margin-right: 10px;
+}
+.plan:first-child .plan-features:last-child::before {
+  display: block;
+  content: url("../img/unsupported.png");
 
-      box-shadow: 1px 1px 60px rgba(14,26,53,.2);
-    }
-      .plan .title {
-        text-transform: uppercase;
+  margin-right: 10px;
+}
+.plan:nth-child(2) .plan-features:last-child::before {
+  display: block;
+  content: url("../img/unsupported.png");
 
-        font-size: 1.5em;
-        color: #0e1a35;
-      }
+  margin-right: 10px;
+}
 
-      .cost {
-        margin: 40px 0;
-      }
-        /* A cost customization */
-        .period {
-          font-size: 1.5em;
-          line-height: 1.5;
-          color: #8492af;
-        }
-        .dollar {
-          font-size: 2em;
-          line-height: 1.3;
-        }
-        .digit {
-          font-size: 4em;
-        }
-        /* Plan features */
+.pricing > p {
+  width: 60%;
 
-      .plan .plan-features {
-            display: flex;
-            margin: 0;
-      }
-        /* Features icons */
-        .plan .plan-features::before {
-          display: block;
-          content: url("../img/supported.png");
+  text-align: center;
+}
 
-          margin-right: 10px;
-        }
-          /* Unsupported features */
-          .plan:first-child .plan-features:nth-last-child(2)::before {
-            display: block;
-            content: url("../img/unsupported.png");
+.join {
+	position: relative;
 
-            margin-right: 10px;
-          }
-          .plan:first-child .plan-features:last-child::before {
-            display: block;
-            content: url("../img/unsupported.png");
+	padding: 10px 3.5em;
+  margin: 60px;
 
-            margin-right: 10px;
-          }
-          .plan:nth-child(2) .plan-features:last-child::before {
-            display: block;
-            content: url("../img/unsupported.png");
+	font-family: "Roboto Bold";
 
-            margin-right: 10px;
-          }
+	color: #fff;
+	background-color: #5584ff;
 
-    .pricing > p {
-      width: 60%;
+  opacity: 1;
+  transition: opacity .3s ease-in-out, box-shadow .3s ease-in-out;
+}
 
-      text-align: center;
-    }
+.join:hover {
+  opacity: .9;
+  box-shadow: 0 0 10px rgba(39,71,144, .5);
+}
 
-    .join {
-    	position: relative;
+.join::after,
+.join::before {
+  display: block;
+  display: block;
+  content: "";
 
-    	padding: 10px 60px;
-      margin: 60px;
+  position: absolute;
+  top: 50%;
 
-    	font-family: "Roboto Bold";
+  height: 1px;
+  width: 80%;
 
-    	color: #fff;
-    	background-color: #5584ff;
-    }
+  background-color: #dadee7;
+}
 
-    .join:hover {
-    	cursor: pointer;
-    }
+.join::after {
+  right: calc(100% + 30px);
+}
 
-    .join::after,
-    .join::before {
-      display: block;
-    	content: url("../img/line.png");
-
-      position: absolute;
-      bottom: 39%;
-    }
-
-    .join::after {
-      right: -130%;
-    }
-
-    .join::before {
-      left: -130%;
-    }
+.join::before {
+  left: calc(100% + 30px);
+}
