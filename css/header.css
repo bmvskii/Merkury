@@ -7,16 +7,49 @@
 	left: 0;
 	top: 0;
 	right: 0;
+	z-index: 1000;
 
 	margin: 0 7%;
-	margin-top: 30px;
+	margin-top: 55px;
 }
 
 .logo {
 	display: inline-block;
 
-	min-width: 150px;
+	min-width: 100px;
 	width: 15%;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu-content {
+	display: flex;
+	align-items: baseline;
+}
+
+.menu-logo {
+	display: none;
+
+	width: 40px;
+	height: 40px;
+
+	background: url('../img/menu-logo-open.svg') no-repeat center center;
+	background-size: cover;
+
+	cursor: pointer;
+
+	transition: background .2s linear;
+}
+
+.show {
+	display: flex !important;
+}
+
+.open {
+	background: url('../img/menu-logo-close.svg') no-repeat center center;
+	background-size: cover;
 }
 
 .nav {
@@ -50,9 +83,7 @@
 	transition: width .3s .1s ease-in-out;
 }
 
-.nav .link:hover::after {
-	width: 100%;
-}
+.nav .link:hover::after { width: 100%; }
 
 .login {
 	padding: 10px 2.5em;

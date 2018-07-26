@@ -8,31 +8,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  font-size: 0.9em;
 }
 
 .plans {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
   width: 100%;
+  margin: 0 -30px;
 
-  margin: 0 -45px;
   padding: 80px 0;
 }
 
 .plan {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+	flex-wrap: wrap;
 
-  margin: 0 40px;
   padding: 30px;
+  margin: 30px 0;
 
-  width: 33%;
+  width: 30%;
 
   box-shadow: 1px 1px 60px rgba(14,26,53,.2);
   transition: transform .3s .1s ease-in-out;
 }
+
+.plan:first-child { margin-left: 0; }
+
+.plan:last-child { margin-right: 0; }
 
 .plan:hover {
   cursor: pointer;
@@ -47,9 +57,7 @@
   color: #0e1a35;
 }
 
-.cost {
-  margin: 40px 0;
-}
+.cost { margin: 40px 0; }
 
 /* A cost customization */
 .period {
@@ -63,13 +71,11 @@
   line-height: 1.3;
 }
 
-.digit {
-  font-size: 4em;
-}
+.digit { font-size: 4em; }
   /* Plan features */
 .plan-features {
-      display: flex;
-      margin: 0;
+  display: flex;
+  margin: 0;
 }
 /* Features icons */
 .plan-features::before {

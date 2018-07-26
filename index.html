@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="top">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="">
 	<meta name="authot" content="">
 
@@ -15,10 +15,13 @@
 	<link rel="stylesheet" href="css/hero.css">
 	<link rel="stylesheet" href="css/features.css">
 	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/design.css">
 	<link rel="stylesheet" href="css/showcase.css">
-	<link rel="stylesheet" href="css/drag_and_drop.css">
 	<link rel="stylesheet" href="css/pricing.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="css/animate.min.css">
 
 	<title>Merkury</title>
 
@@ -31,22 +34,28 @@
 </head>
 
 <body>
+	<a class="toTop hidden" href="#top"></a>
 
 	<div class="header">
-		<a class="logo" href="#"><img class="responsive-image" src="img/logo.png" alt="logo"></a>
-		<div class="nav">
-			<a class="link" href="#">Features</a>
-			<a class="link" href="#">Pricing</a>
-			<a class="link" href="#">Blog</a>
-			<a class="link" href="#">Contact</a>
-			<button class="button login">Login</button>
+		<a class="logo" href="#top"><img class="responsive-image" src="img/logo.png" alt="logo"></a>
+		<div class="menu">
+			<div class="menu-content">
+				<div class="nav">
+					<a class="link" href="#features">Features</a>
+					<a class="link" href="#pricing">Pricing</a>
+					<a class="link" href="#">Blog</a>
+					<a class="link" href="#">Contact</a>
+				</div>
+				<button class="button login">Login</button>
+			</div>
+			<div class="menu-logo"></div>
 		</div>
 	</div>
 
-	<div class="hero container">
+	<div class="hero container" >
 		<h2>Grow Your business with Merkury</h2>
 		<h3>Your partner in crime!</h3>
-		<button class="button start">Get started</button>
+		<button class="button start" href="#features">Get started</button>
 		<div class="dashboard_wrapper">
 			<div class="dashboard">
 				<img class="responsive-image" src="img/dashboard.jpg" alt="dashboard">
@@ -54,7 +63,7 @@
 		</div>
 	</div>
 
-	<div class="features_wrapper">
+	<div class="features_wrapper" id="features">
 		<div class="features container">
 			<div class="feature">
 				<div class="icon">
@@ -70,7 +79,7 @@
 						<img src="img/icon2.png" alt="icon2">
 					</div>
 				</div>
-				<span class="title">Analytics & Insights</span>
+				<span class="title">Analytics &amp; Insights</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorem, vel perferendis nisi iste eos, voluptatibus debitis maiores cumque ipsa.</p>
 				<button class="button more">See more</button>
 			</div>
@@ -101,9 +110,8 @@
 		</div>
 	</div>
 
-	<!-- TODO: Drag and Drop Animation -->
-	<div class="drag-and-drop_wrapper">
-		<div class="drag-and-drop container">
+	<div class="showcase_wrapper">
+		<div class="showcase container">
 			<div class="workflow">
 				<div class="tasks in-progress">
 					<div class="state-info">
@@ -113,7 +121,7 @@
 					<div class="tasks_wrapper">
 						<img class="responsive-image" src="img/in_progress_tasks.png" alt="tasks-in-progress">
 						<div class="draggable-task">
-							<img class="responsive-image" src="img/task.png" alt="task" class="task">
+							<img class="responsive-image" src="img/task.png" alt="draggable-task">
 							<div class="hand">
 								<img class="responsive-image" src="img/hand-gesture.png" alt="hand">
 							</div>
@@ -132,31 +140,27 @@
 					</div>
 			</div>
 			<div class="info">
-				<h2>Drag & Drop</h2>
+				<h2>Drag &amp; Drop</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas assumenda officia ratione, voluptatum corporis veritatis?</p>
 				<p>Pariatur sapiente mollitia dolorum cupiditate, nostrum alias sunt dolores cum aspernatur inventore optio facere architecto.</p>
-				<div class="arrows">
-					<div class="left"></div>
-					<div class="right"></div>
-				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="showcase_wrapper">
-		<div class="showcase container">
+	<div class="design_wrapper">
+		<div class="design container">
 			<h2 class="dark">Powerfull PSD Template</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur molestiae odit magni repellat numquam quod natus impedit aut alias obcaecati vel et, ullam, esse accusamus, quaerat expedita cupiditate tenetur deleniti.</p>
 			<div class="template">
-				<div class="mockup">
-					<img class="responsive-image" src="img/screen_mockup.png" alt="screen_mockup">
-				</div>
 				<div class="info top-left">
 					<div class="title">Clean & modern layout</div>
 					<div class="pointer">
 						<div class="line"></div>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim laborum quas asperiores ab. Quam.</p>
+				</div>
+				<div class="mockup">
+					<img class="responsive-image" src="img/screen_mockup.png" alt="screen_mockup">
 				</div>
 				<div class="info right-bottom">
 					<div class="title">Easy to customise</div>
@@ -169,7 +173,7 @@
 		</div>
 	</div>
 
-	<div class="pricing_wrapper">
+	<div class="pricing_wrapper"  id="pricing">
 		<div class="pricing container">
 			<h2 class="dark">Check our pricing!</h2>
 			<div class="plans">
@@ -217,7 +221,6 @@
 
 	<div class="footer_wrapper">
 		<div class="footer container">
-			<p>© 2016 Merkury All Right Reserved </p>
 			<div class="info">
 				<a href="#">Pricing</a>
 				<a href="#">Blog</a>
@@ -228,10 +231,12 @@
 					<a href="#"><img src="img/google_icon.png" alt="google_icon"></a>
 				</div>
 			</div>
+			<p>© 2016 Merkury All Right Reserved </p>
 		</div>
 	</div>
 
-	<script src=""></script>
-
+	<script src='js/jquery-1.11.3.min.js'></script>
+	<script src='js/jquery.waypoints.min.js'></script>
+	<script src='js/main.js'></script>
 </body>
 </html>

@@ -5,13 +5,12 @@
 
 .footer {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.footer .info {
-  display: flex;
-}
+.footer .info { display: flex; }
 
 .footer a {
   opacity: 1;
@@ -19,21 +18,17 @@
   transition: opacity .2s ease-in-out;
 }
 
-.footer a:hover {
-  opacity: .7;
-}
+.footer a:hover { opacity: .7; }
 
 .footer .info > a {
   display: inline-block;
 
-  padding-right: 40px;
+  padding-right: 2.3em;
 
   color: #8492af;
 }
 
-.social-links {
-  display: flex;
-}
+.social-links { display: flex; }
 
 .social-links > a {
   display: inline-block;
@@ -42,5 +37,5 @@
   height: 18px;
 
   text-align: center;
-  margin: 0 10px;
+  margin: 0 .5em;
 }

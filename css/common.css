@@ -1,10 +1,10 @@
 /* Default settings for base elements */
-* {
-	box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 body {
 	font: 16px/100% "Roboto Regular", Helvetica, Arial, sans-serif;
+
+	overflow-x: hidden;
 }
 
 a {
@@ -13,9 +13,11 @@ a {
 }
 
 h2 {
-	font: 3.3em "Roboto Thin";
+	font: 3em "Roboto Thin";
   color: #ffffff;
 	line-height: 25%;
+
+	white-space: nowrap;
 }
 
 h3 {
@@ -26,7 +28,7 @@ h3 {
 
 p {
 	color: #8492af;
-	line-height: 1.8;
+	line-height: 1.7;
 }
 
 /* Common useble classes */
@@ -47,27 +49,46 @@ p {
 	outline: none;
 }
 
-.button:hover {
-	cursor: pointer;
-}
-
 .title {
 	font: 1.5em/3 "Roboto Bold";
 	color: #0e1a35;
 }
 
-.responsive-image {
-	max-width: 100%;
+.button:hover { cursor: pointer; }
+
+.responsive-image { max-width: 100%; }
+
+.state { color: #ffffff; }
+
+.number { color: #8492af; }
+
+.dark { color: #0e1a35; }
+
+.toTop {
+	display: inline-block;
+
+	width: 50px;
+	height: 50px;
+
+	position: fixed;
+	left: 4%;
+	bottom: 50%;
+
+	z-index: 1000;
+
+	background: url('../img/up.svg') no-repeat center center;
+	background-size: cover;
+
+	opacity: 1;
+	transition: opacity .2s linear;
 }
 
-.state {
-  color: #ffffff;
+.toTop:hover,
+.toTop:focus {
+	cursor: pointer;
+	opacity: .3;
 }
 
-.number {
-  color: #8492af;
-}
-
-.dark {
-	color: #0e1a35;
+.hidden {
+	display: none;
 }

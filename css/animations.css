@@ -1,55 +1,9 @@
 @keyframes drag {
-  from {
-    transform: translate(0, 0);
-  }
-
-  10% {
-    transform: translate(10%, 20%);
-  }
-
-  20% {
-    transform: translate(20%, 40%);
-  }
-
-  30% {
-    transform: translate(30%, 60%);
-  }
-
-  40% {
-    transform: translate(40%, 50%);
-  }
-
-  50% {
-    transform: translate(50%, 40%);
-  }
-
-  60% {
-    transform: translate(60%, 30%);
-  }
-
-  70% {
-    transform: translate(70%, 20%);
-  }
-
-  80% {
-    transform: translate(80%, 10%);
-  }
-
-  90% {
-    transform: translate(90%, 0%);
-  }
-
-  to {
-    transform: translate(105%, -10%);
-  }
+  from { transform: translate3d(0%, 0%, 0) }
+  to { transform: translate3d(105%, -14%, 0)}
 }
 
 @keyframes blink {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
