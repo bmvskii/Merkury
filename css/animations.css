@@ -1,9 +1,0 @@
-@keyframes drag {
-  from { transform: translate3d(0%, 0%, 0) }
-  to { transform: translate3d(105%, -14%, 0)}
-}
-
-@keyframes blink {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
